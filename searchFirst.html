@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" Content="html\text charest=utf-8">
+	<script src="jQuery\jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text\css" href="dist\css\bootstrap.min.js">
+	<script src="dist\js\bootstrap.min.js"></script>
+	<style>
+		img#logo{
+			position: absolute;
+			left: 110px;
+			top: 30px;
+			width:240px;
+			height:130px;
+		}
+		a{
+			color:#999;
+		}
+		body{
+			font-size: 12px;
+			font-family:Arial;
+		}
+		a:hover{
+			color:#C40000;
+		}
+		div.searchDiv{
+			width: 610px;
+			height: 40px;
+			margin:50px auto;
+			background-color:#ff0036;
+			padding:1px;
+		}
+		div.searchDiv input{
+			width: 478px;
+			height: 32px;
+			margin: 1px;
+			outline:none;
+		}
+		div.searchDiv button{
+			width: 120px;
+			height: 34px;
+			border:1px solid transparent;
+			font-size:20px;
+			font-weight:bold;
+			color:white;
+			outline: none;
+			background-color:#ff0036;
+		}
+		div.searchBelow{
+			margin-top: 5px;
+			margin-bottom:-20px;
+		}
+		div.searchBelow span{
+			color: #999;
+		}
+		div.searchBelow a{
+			margin:0px 20px 0px 20px;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<a href="#">
+			<img src="img\sate\logo240-130.png" id="logo">
+		</a>
+			<div class="searchDiv">
+				<input type="text" name="keyword" placeholder="搜索 天猫 商品/品牌/店铺">
+				<button type="submit" class="searchButton">搜索</button>
+					<div class="searchBelow">
+						<span><a href="#">针织衫</a><span>|</span></span>
+						<span><a href="#">羽绒服</a><span>|</span></span>
+						<span><a href="#">四件套</a><span>|</span></span>
+						<span><a href="#">客户灯</a><span>|</span></span>
+						<span><a href="#">运动鞋</a></span>
+					</div>
+			</div>
+	</div>
+</body>
+</html>
