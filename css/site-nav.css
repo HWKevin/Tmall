@@ -40,6 +40,21 @@ h1,h2,h3,h4,h5{
 	width: 100%;
 }
 
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot');
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+    url('iconfont.woff') format('woff'),
+    url('iconfont.ttf') format('truetype'),
+    url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:12px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 #site-nav{
 	height: 32px;
 	background: #f2f2f2;
@@ -113,7 +128,7 @@ h1,h2,h3,h4,h5{
 	background: #fff;
 	border:1px solid #eee;
 	border-top:none;
-	z-index: 1000;
+	z-index: 1;
 	display:none;
 }
 .sn-quick-menu>li{
@@ -150,14 +165,14 @@ h1,h2,h3,h4,h5{
 	height: 215px;
 	background: #fff;
 	box-shadow: 0px 0px 5px #aaa;
-	z-index: 1000;
+	z-index: 1;
 	display: none;
 }
 .sn-phone .sn-qrcode-content{
 	width: 175px;
 	height: 175px;
 	background: url(../img/sn-qrcode.png) no-repeat;
-}
+}    
 .sn-phone .sn-qrcode p{
 	text-indent: -9999px;
 	margin: 0px 15px;
@@ -414,7 +429,8 @@ h1,h2,h3,h4,h5{
 .main-menu{
 	height: 36px;
 	background: #fff;
-	z-index: 1000;
+	z-index: 1;
+	border-bottom:2px solid #c40000;
 }
 .main-menu .first-menu{
 	width: 180px;
@@ -441,7 +457,7 @@ h1,h2,h3,h4,h5{
 .second-menu a{
 	font-size: 16px;
 	color: #111;
-	z-index: 1100;
+	z-index: 2;
 }
 .second-menu a:hover{
 	color: #c40000;
@@ -482,18 +498,19 @@ h1,h2,h3,h4,h5{
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 }
-.main-category .main-detail{
+.main-detail{
 	position: absolute;
 	top: 0;
 	left: 200px;
-	height: 500px;
 	width: 852px;
-	display:inline-block;	
+	height: 500px;
+	z-index: 1;
+	display: none;	
 }
 .main-category .detail{
 	background: #fff;
 	height: 500px;
-	display: inline-block;
+	display: none;
 }
 .detail .detail-word{
 	width: 583px;

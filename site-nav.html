@@ -10,6 +10,7 @@
 	<script src="jQuery/jqery-3.3.1.min.js"></script>
 	<link href="dist/css/bootstrap.min.css">
 	<script src="dist/js/bootstrap.min.css"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/site-nav.css">
 	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
@@ -195,16 +196,16 @@
 		<!-- main-menu end -->
 		<!-- main-catgory  start-->
 		<div class="main-category container clear">
-			<ul class="mc-content">
-				<li class="nav-item nav-item-0">
+			<ul class="mc-content" id="mc-content">
+				<li class="nav-item nav-item-0" data-color="#e54077">
 					<i class="iconfont icon-nvzhuangneiyi nav-item-icon"></i>
 					<a href="#">女装</a>/<a href="#">内衣</a>
 				</li>
-				<li class="nav-item nav-item-1">
+				<li class="nav-item nav-item-1" data-color="#427def">
 					<i class="iconfont icon-changyonglogo26 nav-item-icon"></i>
 					<a href="#">男装</a>/<a href="#">运动户外</a>
 				</li>
-				<li class="nav-item ">
+				<li class="nav-item " data-color="#6347ed">
 					<i class="iconfont icon-xiezi nav-item-icon"></i>
 					<a href="#">女鞋</a>/<a href="#">男鞋</a>/<a href="#">箱包</a>
 				</li>
@@ -267,26 +268,169 @@
 						<div class="hot-word-line clear">
 							<h3>
 								<span>当季流行</span>
+								<i class="iconfont title-icon">&#xe620;</i>
 							</h3>
 							<div class="line-con">
-									<a href="#" class="highlight">春季新品</a>
-									<a href="#">商场同款</a>
-									<a href="#" class="highlight">气质连衣裙</a>
-									<a href="#">卫衣</a>
-									<a href="#" class="highlight">时髦外套</a>
-									<a href="#" class="highlight">毛针织衫</a>
-									<a href="#">休闲裤</a>
-									<a href="#">牛仔裤</a>
-									<a href="#">毛呢大衣</a>
-									<a href="#" class="highlight">无痕文胸</a>
-									<a href="#">运动文胸</a>
-									<a href="#" class="highlight">潮流家居服</a>
-									<a href="#">百搭船袜</a>
+								<a class="highlight" href="#">女士新品</a>
+								<a href="#">短袖T恤</a>
+								<a class="highlight" href="#">时尚套装</a>
+								<a href="#">女装商场同款</a>
+								<a href="#">内衣夏季新品</a>
+								<a class="highlight" href="#">内衣商场同款</a>
+								<a href="#">睡衣套装</a>
+								<a class="highlight" href="#">情侣家居服</a>
+								<a href="#">丝袜</a>
 							</div>
 						</div>
-						
-
-						
+						<div class="hot-word-line clear">
+							<h3>
+								<span>精选上衣</span>
+								<i class="iconfont title-icon">&#xe620;</i>
+							</h3>
+							<div class="line-con">
+								<a class="highlight" href="#">T恤</a>
+								<a href="#">衬衫</a>
+								<a class="highlight" href="#">雪纺衫</a>
+								<a href="#">针织衫</a>
+								<a href="#">短外套</a>
+								<a class="highlight" href="#">吊带背心</a>
+								<a href="#">卫衣</a>
+								<a class="highlight" href="#">小西装</a>
+								<a href="#">风衣</a>
+							</div>
+						</div>
+						<div class="hot-word-line clear">
+							<h3>
+								<span>浪漫裙装</span>
+								<i class="iconfont title-icon">&#xe620;</i>
+							</h3>
+							<div class="line-con">
+								<a class="highlight" href="#">连衣裙</a>
+								<a href="#">蕾丝连衣裙</a>
+								<a class="highlight" href="#">印花连衣裙</a>
+								<a href="#">真丝连衣裙</a>
+								<a href="#">半身裙</a>
+								<a class="highlight" href="#">百褶裙</a>
+								<a href="#">牛仔裙</a>
+								<a class="highlight" href="#">背心裙</a>
+								<a href="#">A字裙</a>
+								<a href="#">棉麻连衣裙</a>
+								<a class="highlight" href="#">蕾丝半身裙</a>
+								<a href="#">包臀裙</a>
+								<a href="#">长袖连衣裙</a>
+							</div>
+						</div>
+						<div class="hot-word-line clear">
+							<h3>
+								<span>女士夏装</span>
+								<i class="iconfont title-icon">&#xe620;</i>
+							</h3>
+							<div class="line-con">
+								<a class="highlight" href="#">休闲裤</a>
+								<a class="highlight" href="#">牛仔裤</a>
+								<a href="#">打底裤</a>
+								<a href="#">短裤</a>
+								<a href="#">哈伦裤</a>
+								<a href="#">背带裤</a>
+								<a class="highlight" href="#">小脚裤</a>
+								<a href="#">西装裤</a>
+								<a href="#">阔腿裤</a>
+							</div>
+						</div>
+						<div class="hot-word-line clear">
+							<h3>
+								<span>特色女装</span>
+								<i class="iconfont title-icon">&#xe620;</i>
+							</h3>
+							<div class="line-con">
+								<a class="highlight" href="#">时尚气质套装</a>
+								<a href="#">休闲运动套装</a>
+								<a class="highlight" href="#">妈妈装夏款</a>
+								<a href="#">大码女装</a>
+								<a class="highlight" href="#">职业套装</a>
+								<a class="highlight" href="#">旗袍</a>
+								<a href="#">礼服</a>
+								<a href="#">婚纱</a>
+								<a href="#">唐装</a>
+							</div>
+						</div>
+						<div class="hot-word-line clear">
+							<h3>
+								<span>文胸塑身</span>
+								<i class="iconfont title-icon">&#xe620;</i>
+							</h3>
+							<div class="line-con">
+								<a class="highlight" href="#">聚拢文胸</a>
+								<a class="highlight" href="#">运动文胸</a>
+								<a href="#">性感蕾丝</a>
+								<a href="#">无钢圈</a>
+								<a class="highlight" href="#">塑身上衣</a>
+								<a href="#">塑身连体衣</a>
+							</div>
+						</div>
+						<div class="hot-word-line clear">
+							<h3>
+								<span>家居服</span>
+								<i class="iconfont title-icon">&#xe620;</i>
+							</h3>
+							<div class="line-con">
+								<a class="highlight" href="#">睡衣</a>
+								<a href="#">少女家居服</a>
+								<a href="#">睡袍</a>
+								<a class="highlight" href="#">居家套装</a>
+								<a href="#">全棉睡衣</a>
+								<a class="highlight" href="#">情侣家居服</a>
+								<a href="#">真丝家居服</a>
+							</div>
+						</div>
+						<div class="hot-word-line clear">
+							<h3>
+								<span>内裤背心</span>
+								<i class="iconfont title-icon">&#xe620;</i>
+							</h3>
+							<div class="line-con">
+								<a class="highlight" href="#">男士内裤</a>
+								<a href="#">女式内裤</a>
+								<a class="highlight" href="#">莫代尔内裤</a>
+								<a class="highlight" href="#">无痕内裤</a>
+								<a href="#">蕾丝内裤</a>
+								<a class="highlight" href="#">吊带背心</a>
+								<a href="#">男士背心</a>
+							</div>
+						</div>
+						<div class="hot-word-line clear">
+							<h3>
+								<span>袜类</span>
+								<i class="iconfont title-icon">&#xe620;</i>
+							</h3>
+							<div class="line-con">
+								<a class="highlight" href="#">棉袜</a>
+								<a href="#">丝袜</a>
+								<a class="highlight" href="#">男士短袜</a>
+								<a href="#">日式袜子</a>
+								<a class="highlight" href="#">隐形船袜</a>
+								<a href="#">连裤袜</a>
+								<a href="#">瘦身袜</a>
+							</div>
+						</div>
+					</div>
+					<div class="detail-logo">
+						<a href="#"><img src="" data-src="img/detail/barnd1.jpg"></a>
+						<a href="#"><img src="" data-src="img/detail/barnd2.png"></a>
+						<a href="#"><img src="" data-src="img/detail/barnd3.jpg"></a>
+						<a href="#"><img src="" data-src="img/detail/barnd4.jpg"></a>
+						<a href="#"><img src="" data-src="img/detail/barnd5.jpg"></a>
+						<a href="#"><img src="" data-src="img/detail/barnd6.jpg"></a>
+						<a href="#"><img src="" data-src="img/detail/barnd7.jpg"></a>
+						<a href="#"><img src="" data-src="img/detail/barnd8.jpg"></a>
+						<a href="#"><img src="" data-src="img/detail/barnd9.jpg"></a>
+						<a href="#"><img src="" data-src="img/detail/barnd10.jpg"></a>
+						<a href="#"><img src="" data-src="img/detail/barnd11.jpg"></a>
+						<a href="#"><img src="" data-src="img/detail/barnd12.jpg"></a>
+						<a href="#"><img src="" data-src="img/detail/barnd13.jpg"></a>
+						<a href="#"><img src="" data-src="img/detail/barnd14.jpg"></a>
+						<a href="#"><img src="" data-src="img/detail/barnd15.jpg"></a>
+						<a href="#"><img src="" data-src="img/detail/barnd16.jpg"></a>
 					</div>
 				</div>
 			</div>
